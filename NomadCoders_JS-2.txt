@@ -1,0 +1,96 @@
+console.log(console);을 하면 console의 값을 읽어올 수 있다.
+log, error, info, warn 등의 함수가 있음을 알 수 있다.
+
+---함수---
+
+첫 번째 방법:
+function sayHello(potato){
+    console.log('Hello!' + potato);
+}
+
+두 번째 방법:
+function sayHello(name, age){
+    console.log(`Hello ${name} you are ${age} years old` );
+}
+
+
+세 번째 방법:
+
+function sayHello(potato){
+    return    console.log('Hello!' , potato);
+}
+
+sayHello(potato);
+argument : 인자! 괄호안에 들어가는거 (potato)
+
+console.log를 리턴값으로 쓸 수 있다.
+
+
+const calculator={
+    plus:function(a, b){
+        return a+b;
+    }
+    mult: function(a,b){
+        return a*b;
+    }
+    minus:function(a,b){
+        return a-b;
+    }
+    div : function(a,b){
+        return a/b;
+    }
+}
+
+const plus=calculator.plus(2,4);
+const mult=calculator.mult(2,4);
+const minus=calculator.minus(2,4);
+const div = calculator.div(2,4);
+console.log(
+`plus:${plus} minus:${minus} divide:${divide} multiply:${multiply}`
+);
+
+자바스크립트에서 html에 있는 요소를 객체가 되게 한다. (DOM객체-Document Object Model)
+const title = document.getElementById("title");
+title.style.color="red";
+->자바스크립트에서 html을 조종할 수 있다. 
+
+console.dir(documnet) 를 이용해서 뭐가 있는지 확인!
+
+console.log는 요소를 HTML과 같은 트리 구조로 출력합니다.
+console.dir은 요소를 JSON과 같은 트리 구조로 출력합니다.
+ 
+querySelector("#title");
+-> document.getElementById, document.getElementsByClassName 와 같이 쓰는것과 다르게
+만능으로 다 쓸 수 있다.
+
+** 자바스크립트에서 html과 css를 변경할 수 있다. **
+
+------------event & eventhandler-----------
+자바스크립트는 추가로 이벤트에 반응하기 위해 만들어졌어!!
+이벤트에 반응하는 코드
+
+window : 모든 객체의 전역객체
+function handleResize(){
+    console.log("I have been resized");
+}
+
+window.addEventListener("resize",handleResize);
+-> handleResize()  이렇게 쓰면 resize안해도 자동으로 호출된다.
+
+function handleClick()
+{
+    title.style.color=red;
+}
+
+title.addEventListener("click",handleClick);
+
+title.addEventListener("이벤트 타입", 이벤트 타입이 발생했을 때 호출);
+addEventListener -> 중복해도 차례대로 실행한다!
+
+function resizea(event){
+    console.log(event);
+}
+
+window.addEventListener("click",resizea);
+
+prompt: alert 형식으로 값을 물어본다.

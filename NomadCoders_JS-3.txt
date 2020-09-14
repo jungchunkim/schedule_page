@@ -1,0 +1,28 @@
+이벤트의 근원을 알 떄 MDN 찾기
+dom event
+
+addEventListener 의 이벤트는 많다!! 검색해서 필요할 떄 쓰면 됩니다~
+
+classList->add
+            -->지정한 클래스 값을 추가한다. 만약 추가하려는 클래스가 엘리먼트의 class 속성에 이미 존재한다면 무시한다.
+        ->remove
+            -->지정한 클래스 값을 제거한다.
+
+        ->toggle
+            -->클래스가 존재한다면 제거하고 false를 반환하며, 존재하지 않으면 클래스를 추가하고 true를 반환한다.
+
+querySelector: 사용하는 첫 번째 요소를 반환한다.
+querySelectorAll : 모든 요소를 지정한다.
+getelementbytagname : 태그로 가져오는 것
+
+---local storage---
+무엇인가를 저장하고 있어
+localStorage.getItem
+localStorage.setItem
+
+classList를 이용하면 클래스를 조작하는 다양한 메서드들을 쓸 수 있다.
+-> classList.add : 클래스를 필요에 따라 삽입한다.
+-> classList.remove : 클래스를 필요에 따라 제거한다.
+( css 우선순위가 같다면 나중에 선언된 것이 우선순위가 높다 )
+
+form 엔터 치면 'submit' 이라는 명령

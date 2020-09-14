@@ -1,0 +1,73 @@
+노마드코더
+momentum -> 만들것!
+
+JavaScript ??
+
+-> 웹에 쓰이는 하나뿐인 언어 ( 프론트 엔드로! )
+
+점점 더 영향력 있게 된다!
+-> 안 좋은 점! 좋은 점!
+
+real-time system: 특정 입력에 대해 주어진 시간 내에 반드시 정해진 결과를 보장해야 하는 시스템
+
+ECMAScript : JS의 표준 규격(버전) 이라고 생각하자, Specification에 대한 설명 
+( Specification(JS)에 대한 업데이트,버전 )
+
+프레임워크는 '제공받은 일정한 요소와 틀, 규약을 가지고 무언가를 만드는 일'
+
+CSS 를 연결하는 것은 <head> 사이에 있어야하고, JS를 연결하는 것은 body쪽에 있어야한다.
+
+웹에서 모든 나라에 있고 웹에 저절로 깔려 있어서 JS 는 대중적!! 알아야해!!
+
+----------변수------------
+
+1. Create 
+2. initialize
+3. use
+
+---let---
+let a=22 처럼 let을 앞에 써준다. (선언한거를 티나게 해주려고)
+( 변수가 바뀌어도 될 때 사용 )
+
+변수의 값이 변하지 않게 할 때! 
+-> const ( 상수 )
+
+---var---
+var 도 값을 바꿀 수 있어
+
+var은 변수 재 선언 가능, let 은 변수 재 선언 불가
+
+*let과 const를 이용하도록 하자!*
+
+
+""안에 쓰는 것은 문자열!
+모든 변수 const로 받을 수 있어.( float, int, string, boolean)
+
+
+문자를 작성할때 띄어쓰기가 필요하면 대문자를 대신에 써준다.
+ex) lowerOfWeek
+-------Array-------
+배열에 여러 타입 다 넣어도 된다!
+var process = [
+    function(input){ return input + 10;}, // 1 + 1 = 11
+    function(input){ return input * input;}, // 11 * 11 = 121
+    function(input){ return input / 2;} // 121 / 2 = 60.5
+];
+
+
+
+-------Object------
+각 value 에 이름을 줄 수 있다.
+
+const nicoInfo =[
+    name:"Nico",
+    age:33,
+    gender:"Male,
+    isHandsome:true
+]
+
+-> const 라도 안에 있는 값은 변경 가능하다. 
+
+console.log(nicoInfo.gender);
+
+nicoInfo.gender = "Female"; // 가능!

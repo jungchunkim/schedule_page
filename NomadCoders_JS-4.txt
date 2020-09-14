@@ -1,0 +1,18 @@
+Making a To Do List
+
+localStorage -> String 형태로 되어있다.
+
+
+JSON 형태 (Java Script Object Notation)
+ "키-값 쌍"으로 이루어진 데이터 오브젝트를 전달하기 위해 
+ 인간이 읽을 수 있는 텍스트를 사용하는 개방형 표준 포맷이다
+
+parse . 
+localStorage.setItem(TODOS_LS,JSON.stringify(toDos));
+-> 서로 반대!
+
+ event.target -> 이벤트가 발생한 요소를 알려줌 ( X 표시 된것 )
+
+ filter : 조건이 true  인 것만 확인한다.
+
+ forEach : 배열에 담겨있는 것들이 각각 한 번씩 함수를 실행
